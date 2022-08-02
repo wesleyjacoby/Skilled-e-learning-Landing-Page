@@ -249,16 +249,17 @@ footer {
     }
 
     .hero-image-tablet {
-        position: relative;
+        /* position: relative; */
         display: block;
         width: 50%;
-        /* overflow: hidden; */
+        overflow: hidden;
+        transform: translateX(50px);
     }
 
     .hero-image {
         max-width: 640px;
-        /* transform: scale(180%); */
-        transform: translateX(40px);
+        /* transform: scale(110%); */
+        /* transform: translateX(40px); */
         transform: translateY(-160px);
     }
 
