@@ -269,8 +269,6 @@ footer {
 
     .main-text {
         max-width: 55%;
-        /* max-width: 400px; */
-        /* border: 1px solid blue; */
     }
 
     .hero-image-tablet {
@@ -281,13 +279,8 @@ footer {
         left: 300px;
     }
 
-    .hero-image {
-        /* max-width: 90%; */
-    }
-
     .flex-container {
         display: flex;
-        /* justify-content: space-between; */
         flex-wrap: wrap;
         row-gap: 16px;
         column-gap: 11px;
