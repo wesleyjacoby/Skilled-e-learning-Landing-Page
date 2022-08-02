@@ -26,11 +26,20 @@ a {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    min-height: 100vh;
+    margin: 10px;
 }
 
 .main-container {
     margin: 16px;
 }
+
+/* .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 /* --HEADER STYLES-- */
 
@@ -115,8 +124,12 @@ header {
 
 /* --HERO-IMAGE STYLES-- */
 
-.hero-image {
+.hero-image-mobile {
     transform: scale(120%);
+}
+
+.hero-image-tablet {
+    display: none;
 }
 
 /* --COURSES CARD STYLES-- */
@@ -137,6 +150,7 @@ header {
 
 .card {
     background-color: var(--bg-color);
+    height: 283px;
     border-radius: 10px;
     margin-bottom: 44px;
 }
@@ -221,4 +235,74 @@ footer {
 .button3:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     cursor: pointer;
+}
+
+/* --MEDIA QUERIES-- */
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        margin: 24px 40px 0px 50px;
+    }
+
+    .hero-image-mobile {
+        display: none;
+    }
+
+    .hero-image-tablet {
+        position: relative;
+        display: block;
+        width: 50%;
+        /* overflow: hidden; */
+    }
+
+    .hero-image {
+        max-width: 640px;
+        /* transform: scale(180%); */
+        transform: translateX(40px);
+        transform: translateY(-160px);
+    }
+
+    header {
+        margin-bottom: 99px;
+    }
+
+    /* html {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    } */
+
+    /* body {
+        background-image: url(./assets/image-hero-desktop.png);
+        background-size: 640px;
+        background-repeat: no-repeat;
+        background-position: top -40px left 370px;
+    } */
+
+    .text-container {
+        display: flex;
+        height: 480px;
+    }
+
+    .main-text {
+        width: 50%;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 8px;
+        margin: auto;
+    }
+
+    .popular-courses h2 {
+        padding: 56px 21px 139px 32px;
+        max-width: 335px;
+        max-height: 259px;
+    }
+
+    .card {
+        max-width: 335px;
+        max-height: 283px;
+    }
 }
