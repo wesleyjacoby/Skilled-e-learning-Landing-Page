@@ -36,16 +36,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 16px auto;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
-
-/* .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 /* --HEADER STYLES-- */
 
@@ -249,8 +242,8 @@ footer {
 
 @media screen and (min-width: 768px) {
     .main-container {
-        margin: 24px 40px 0px 50px;
-        max-width: 800px;
+        margin-top: 25px;
+        max-width: 100%;
     }
 
     .hero-image-mobile {
@@ -270,7 +263,7 @@ footer {
     }
 
     .main-text {
-        max-width: 55%;
+        max-width: 50%;
     }
 
     .hero-image-tablet {
@@ -280,6 +273,10 @@ footer {
         top: -560px;
         left: 300px;
     }
+
+    /* .hero-image {
+        max-width: 815px;
+    } */
 
     .flex-container {
         display: flex;
@@ -304,4 +301,32 @@ footer {
         max-height: 283px;
         flex-grow: 1;
     }
+}
+
+@media screen and (min-width: 845px) {
+    .main-container {
+        /* margin: 29px 165px 0px 165px; */
+        /* max-width: 100%; */
+        max-width: 1280px;
+    }
+
+    .main-text {
+        max-width: 30%;
+    }
+
+    .hero-image-tablet {
+        display: inline-block;
+        max-width: 100%;
+        position: relative;
+        top: -700px;
+        left: 600px;
+    }
+
+    /* header {
+        max-width: 1280px;
+    }
+
+    .text-container {
+        max-width: 1280px;
+    } */
 }
